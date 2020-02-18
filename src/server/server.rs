@@ -40,7 +40,7 @@ use super::{Config, Result};
 
 const LOAD_STATISTICS_SLOTS: usize = 4;
 const LOAD_STATISTICS_INTERVAL: Duration = Duration::from_millis(100);
-const MAX_GRPC_RECV_MSG_LEN: i32 = 10 * 1024 * 1024;
+const MAX_GRPC_RECV_MSG_LEN: i32 = 256 * 1024 * 1024;
 pub const GRPC_THREAD_PREFIX: &str = "grpc-server";
 pub const STATS_THREAD_PREFIX: &str = "transport-stats";
 
